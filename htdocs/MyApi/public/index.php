@@ -258,7 +258,7 @@ $app->post('/pharmacist', function(Request $request, Response $response){
 */
 
 //---------------------------------------------------------------------
-$app->post('/drugRecRequest', function(Request $request, Response $response){
+$app->post('/drugrecrequest', function(Request $request, Response $response){
     if(!haveEmptyParameters(array('requestId','requesterId','pharamacistId','requestDate'), $response)){
         $request_data = $request->getParsedBody();
 
@@ -317,7 +317,7 @@ $app->post('/drugRecRequest', function(Request $request, Response $response){
 */
 
 //---------------------------------------------------------------------
-$app->post('/drugRecommend', function(Request $request, Response $response){
+$app->post('/drugrecommend', function(Request $request, Response $response){
     if(!haveEmptyParameters(array('recommendationId','creatorId','creatorName','receiverId','receiverName','createDate'), $response)){
         $request_data = $request->getParsedBody();
 
